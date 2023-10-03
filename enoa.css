@@ -104,7 +104,6 @@
   min-height: 847px;
   padding-top: 35px;
   width: 100%;
-  background-color: #d2d39665;
 }
 
 /*------------- Section-specific CSS -------------*/
@@ -198,31 +197,52 @@
     'attributes saves'
     'attributes skills'
     'attributes word'
-    'languages languages'
-    'proficiencies proficiencies';
+    'languages languages';
+  gap: 5px;
 }
 .sheet-attributes{
   grid-area: attributes;
+  background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charsheet/main/images/attributes.png");
+  width: 100px;
+  height: 600px;
+  background-size: 100%;
 }
 .sheet-pb{
   grid-area: profbonus;
+  background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charsheet/main/images/profbonus.png");
+  width: 200px;
+  height: 50px;
+  background-size: 100%;
 }
 .sheet-saves{
   grid-area: saves;
+  background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charsheet/main/images/savethrows.png");
+  width: 200px;
+  height: 170px;
+  background-size: 100%;
 }
 .sheet-skills{
   grid-area: skills;
+  background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charsheet/main/images/skills.png");
+  width: 200px;
+  height: 400px;
+  background-size: 100%;
 
 }
 .sheet-words{
   grid-area: word;
+  background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charsheet/main/images/word.png");
+  width: 200px;
+  height: 120px;
+  background-size: 100%;
 
 }
 .sheet-languages{
   grid-area: languages;
-}
-.sheet-proficiencies{
-  grid-area: proficiencies
+  background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charsheet/main/images/lang_and_prof.png");
+  width: 350px;
+  height: 250px;
+  background-size: 100%;
 }
 
 .sheet-main-second{
@@ -234,7 +254,7 @@
     'hitdices hitdices hitdices death death death'
     'attacks attacks attacks attacks attacks attacks'
     'inventory inventory inventory inventoryi nventory inventory';
-    
+  
 }
 .sheet-ac{
   grid-area: ac;
