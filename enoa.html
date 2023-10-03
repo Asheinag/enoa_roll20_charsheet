@@ -5,15 +5,77 @@
       <input type="radio" name="attr_tab" value="main" checked="checked">
       <span class="sheet-tab-label">Main</span>
       <div class="sheet-tab-content">
+        <!-- HEADER -->
         <div class="sheet-main-header ">
           <div class="sheet-logo"></div>
           <div class="sheet-name">
             <input type="text" name="attr_name_display" title="@{name_display}">
           </div>
-          <div class="sheet-race">RACE</div>
-          <div class="sheet-class">CLASS</div>
-          <div class="sheet-background">BACKGROUND</div>
-          <div class="sheet-player">PLAYER</div>
+          <div class="sheet-character-info">
+            <div class="sheet-race">
+              <input type="text" name="attr_race_display" title="@{race_display}">
+            </div>
+            <div class="sheet-class">
+              <input type="text" name="attr_class_display" title="@{class_display}">
+            </div>
+            <div class="sheet-background">
+              <input type="text" name="attr_back_display" title="@{back_display}">
+            </div>
+            <div class="sheet-player">
+              <input type="text" name="attr_player_display" title="@{player_display}">
+            </div>
+          </div>
+        </div>
+        <!-- CONTAINER -->
+        <div class="sheet-main-container">
+          <!-- FIRST -->
+          <div class="sheet-main-first">
+            <!-- Attributes -->
+            <div class="sheet-attributes"></div>
+            <!-- Professional Bonus -->
+            <div class="sheet-pb"></div>
+            <!-- Save throws -->
+            <div class="sheet-saves"></div>
+            <!-- Skills -->
+            <div class="sheet-skills"></div>
+            <!-- Word Sign Fate -->
+            <div class="sheet-words"></div>
+            <!-- Languages and tools -->
+            <div class="sheet-languages"></div>
+            <!-- Additional skills and profeciencies -->
+            <div class="sheet-proficiencies"></div>
+          </div>
+          <!-- SECOND -->
+          <div class="sheet-main-second">
+            <!-- Armor class -->
+            <div class="sheet-ac"></div>
+            <!-- Inititative bonus -->
+            <div class="sheet-initiative"></div>
+            <!-- Speed -->
+            <div class="sheet-speed"></div>
+            <!-- Health -->
+            <div class="sheet-health"></div>
+            <!-- Hitdices -->
+            <div class="sheet-hitdices"></div>
+            <!-- Death saves -->
+            <div class="sheet-death"></div>
+            <!-- Attacks and spells -->
+            <div class="sheet-attacks"></div>
+            <!-- Inventory -->
+            <div class="sheet-inventory"></div>
+          </div>
+          <!-- THIRD -->
+          <div class="sheet-main-third">
+            <!-- FLint and Spark Trackers -->
+            <div class="sheet-flint-tracker"></div>
+            <div class="sheet-spark-tracker"></div>
+            <!-- Dices and points-->
+            <div class="sheet-provision-dices"></div>
+            <div class="sheet-veil-dices"></div>
+            <div class="sheet-darkness-points"></div>
+            <!-- Features -->
+            <div class="sheet-features"></div>
+          </div>
         </div>
       </div>
     </div>
