@@ -118,6 +118,7 @@
     'name class player';
   grid-column-gap: 5px;
   grid-row-gap: 5px;
+  padding: 10px;
 }
 
 .sheet-logo {
@@ -132,6 +133,22 @@
 
 .sheet-name {
   grid-area: name;
+  background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charsheet/main/images/charname.png");
+  width: 240px;
+  height: 70px;
+  display: block;
+  background-size: 100%;
+  margin: 0 auto;
+
+}
+
+.sheet-name > input {
+  background-color: transparent;
+  width: 96%;
+  margin-left: 5px;
+  margin-top: 10px;
+  text-align: center;
+
 }
 
 .sheet-race {
