@@ -1,0 +1,90 @@
+<main>
+  <div class="sheet-tabs">
+    <!-- MAIN -->
+    <div class="sheet-tab sheet-tab-main">
+      <input type="radio" name="attr_tab" value="main" checked="checked">
+      <span class="sheet-tab-label">Main</span>
+      <div class="sheet-tab-content">
+        <div class="sheet-main-header ">
+          <div class="sheet-logo">LOGO</div>
+          <div class="sheet-name">NAME</div>
+          <div class="sheet-race">RACE</div>
+          <div class="sheet-class">CLASS</div>
+          <div class="sheet-background">BACKGROUND</div>
+          <div class="sheet-player">PLAYER</div>
+        </div>
+      </div>
+    </div>
+    <!-- DETAILS -->
+    <div class="sheet-tab sheet-tab-details">
+      <input type="radio" name="attr_tab" value="details" >
+      <span class="sheet-tab-label">Details</span>
+      <div class="sheet-tab-content">
+        <div class="sheet-header ">
+          <h1>Example DETAILS</h1>
+          <span>The Template Sheet</span>
+        </div>
+      </div>
+    </div>
+    <!-- CHANTS -->
+    <div class="sheet-tab sheet-tab-chants">
+      <input type="radio" name="attr_tab" value="chants" >
+      <span class="sheet-tab-label">Chants</span>
+      <div class="sheet-tab-content">
+        <div class="sheet-header ">
+          <h1>Example CHANTS</h1>
+          <span>The Template Sheet</span>
+        </div>
+      </div>
+    </div>
+    <!-- SPELLS -->
+    <div class="sheet-tab sheet-tab-spells">
+      <input type="radio" name="attr_tab" value="spells" >
+      <span class="sheet-tab-label">SPELLS</span>
+      <div class="sheet-tab-content">
+        <div class="sheet-header ">
+          <h1>Example SPELLS</h1>
+          <span>The Template Sheet</span>
+        </div>
+      </div>
+    </div>
+    <!-- SETTINGS -->
+    <div class="sheet-tab sheet-tab-settings">
+      <input type="radio" name="attr_tab" value="settings" >
+      <span class="sheet-tab-label">SETTINGS</span>
+      <div class="sheet-tab-content">
+        <div class="sheet-header ">
+          <h1>Example SETTINGS</h1>
+          <span>The Template Sheet</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Datalists & thing that don't show directly on sheet -->
+
+<datalist id="class">
+  <option value="Fighter">Fighter</option>
+  <option value="Mage">Mage</option>
+  <option value="Expert">Expert</option>
+</datalist>
+
+<!-- roll template -->
+
+<rolltemplate class="sheet-rolltemplate-rolls">
+  <div class="sheet-container">
+    <div class="sheet-header">
+      {{#title}}<div class="sheet-title">{{title}}</div>{{/title}}
+      {{#name}}<div class="sheet-name">{{name}}</div>{{/name}}
+      {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
+    </div>
+    <div class="sheet-content">
+      {{#allprops() title name subtitle desc}}
+      <div class="sheet-key">{{key}}</div>
+      <div class="sheet-value">{{value}}</div>
+      {{/allprops() title name subtitle desc}}
+      {{#desc}}<div class="sheet-desc">{{desc}}</div>{{/desc}}
+    </div>
+  </div>
+</rolltemplate>
