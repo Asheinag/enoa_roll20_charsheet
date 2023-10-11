@@ -142,11 +142,11 @@ background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charshee
 
 .sheet-main-header input {
   background-color: transparent;
-  width: 96%;
-  margin-left: 5px;
-  margin-top: 10px;
+  width: 100%;
+  /* margin-left: 5px;
+  margin-top: 10px; */
   text-align: center;
-  border: none;
+  /* border: none; */
 
 }
 
@@ -368,24 +368,28 @@ background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charshee
 
 
 .sheet-sketchy {
-  border: 1px solid #441616;
+  border: 1px solid #b53a3a;
   font-size: 2.5rem;
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
   text-transform: uppercase;
   letter-spacing: 0.3ch;
-  background: #ffffff;
+  /* background: #ffffff; */
+  z-index: 0;
   position: relative;
+  margin-bottom: 15px;
   
   &::before {
       content: '';
       border: 1px solid #7a3333;
-      display: block;
+      /* display: block; */
       width: 100%;
       height: 100%;
       position: absolute;
+      z-index: -1;
       top: 50%;
       left: 50%;
       transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
       border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+      margin-bottom: 15px;
   }
 }
