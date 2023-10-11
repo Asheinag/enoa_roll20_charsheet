@@ -34,60 +34,60 @@
             <div class="sheet-attributes">
               <!-- Flint -->
               <div class="sheet-flint_and_spark_mod">
-                <label>Flint</label>
-                <input type="number" name="attr_flint_mod" title="@{flint_mod}" value="0" disabled/>
+                <label for="attr_flint_mod">Flint</label>
+                <input type="number" class="sheet-fleet_spark" name="attr_flint_mod" title="@{flint_mod}" value="0" disabled/>
               </div>
               <!-- Strength -->
               <div class="sheet-attribute">
-                <label>
+                <label for=""attr_str_mod>
                   Strength
                 </label>
-                <input type="number" name="attr_str_mod" title="@str_mod" value="0" disabled/>
+                <input type="number" class="sheet-attr" name="attr_str_mod" title="@str_mod" value="0" disabled/>
                 <input type="number" name="attr_str_val" title="@str_val" value="10"/>
               </div>
               <!-- Wisdom -->
               <div class="sheet-attribute">
-                <label>
+                <label for=""attr_wis_mod>
                   Wisdom
                 </label>
-                <input type="number" name="attr_wis_mod" title="@wis_mod" value="0" disabled/>
+                <input type="number" class="sheet-attr" name="attr_wis_mod" title="@wis_mod" value="0" disabled/>
                 <input type="number" name="attr_wis_val" title="@wis_val" value="10"/>
               </div>
               <!-- Constitution -->
               <div class="sheet-attribute">
-                <label>
+                <label for=""attr_con_mod>
                   Constitution
                 </label>
-                <input type="number" name="attr_con_mod" title="@con_mod" value="0" disabled/>
+                <input type="number" class="sheet-attr" name="attr_con_mod" title="@con_mod" value="0" disabled/>
                 <input type="number" name="attr_con_val" title="@con_val" value="10"/>
               </div>
               <!-- Spark -->
               <div class="sheet-flint_and_spark_mod">
-                <label>Spark</label>
-                <input type="number" name="attr_spark_mod" title="@{spark_mod}" value="0" disabled/>
+                <label for=""attr_spark_mod>Spark</label>
+                <input type="number" class="sheet-fleet_spark" name="attr_spark_mod" title="@{spark_mod}" value="0" disabled/>
               </div>
               <!-- Intellegence -->
               <div class="sheet-attribute">
-                <label>
+                <label for=""attr_int_mod>
                   Intellegence
                 </label>
-                <input type="number" name="attr_int_mod" title="@int_mod" value="0" disabled/>
+                <input type="number" class="sheet-attr" name="attr_int_mod" title="@int_mod" value="0" disabled/>
                 <input type="number" name="attr_int_val" title="@int_val" value="10"/>
               </div>
               <!-- Dexterity -->
               <div class="sheet-attribute">
-                <label>
+                <label for=""attr_dex_mod>
                   Dexterity
                 </label>
-                <input type="number" name="attr_dex_mod" title="@dex_mod" value="0" disabled/>
+                <input type="number" class="sheet-attr" name="attr_dex_mod" title="@dex_mod" value="0" disabled/>
                 <input type="number" name="attr_dex_val" title="@dex_val" value="10"/>
               </div>
               <!-- Charisma -->
               <div class="sheet-attribute">
-                <label>
+                <label for=""attr_chr_mod>
                   Charisma
                 </label>
-                <input type="number" name="attr_chr_mod" title="@chr_mod" value="0" disabled/>
+                <input type="number" class="sheet-attr" name="attr_chr_mod" title="@chr_mod" value="0" disabled/>
                 <input type="number" name="attr_chr_val" title="@chr_val" value="10"/>
               </div>
             </div>
@@ -143,88 +143,228 @@
             </div>
             <!-- Skills -->
             <div class="sheet-skills">
+              <!-- Acrobatics -->
+              <div class="sheet-skill">
+                <label>Acrobatics</label>
+                <input type="number" name="attr_acrobatics_mod" title="@acrobatics_mod" value="0" disabled/>
+              </div>
+              <!-- Athletics -->
               <div class="sheet-skill">
                 <label>Athletics</label>
                 <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
               </div>
+              <!-- Perception -->
               <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
+                <label>Perception</label>
+                <input type="number" name="attr_perception_mod" title="@perception_mod" value="0" disabled/>
               </div>
+              <!-- Survive -->
               <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
+                <label>Survive</label>
+                <input type="number" name="attr_survive_mod" title="@survive_mod" value="0" disabled/>
               </div>
+              <!-- Animal Handling -->
               <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
+                <label>Animal Handling</label>
+                <input type="number" name="attr_animal_handle_mod" title="@animal_handle_mod" value="0" disabled/>
               </div>
+              <!-- Intimidation -->
               <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
+                <label>Intimidation</label>
+                <input type="number" name="attr_intimidation_mod" title="@intimidation_mod" value="0" disabled/>
               </div>
+              <!-- Performance -->
               <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
+                <label>Performance</label>
+                <input type="number" name="attr_performance_mod" title="@performance_mod" value="0" disabled/>
               </div>
+              <!-- Sleight of Hand -->
               <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
+                <label>Sleight of Hand</label>
+                <input type="number" name="attr_sleight_mod" title="@sleight_mod" value="0" disabled/>
               </div>
+              <!-- Arcana -->
               <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
+                <label>Arcana</label>
+                <input type="number" name="attr_arcana_mod" title="@arcana_mod" value="0" disabled/>
               </div>
+              <!-- Medicine -->
               <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
+                <label>Medicine</label>
+                <input type="number" name="attr_medicine_mod" title="@medicine_mod" value="0" disabled/>
               </div>
+              <!-- Deception -->
               <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
+                <label>Deception</label>
+                <input type="number" name="attr_deception_mod" title="@deception_mod" value="0" disabled/>
               </div>
+              <!-- Nature -->
               <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
+                <label>Nature</label>
+                <input type="number" name="attr_nature_mod" title="@nature_mod" value="0" disabled/>
+              </div>
+              <!-- Insight -->
+              <div class="sheet-skill">
+                <label>Insight</label>
+                <input type="number" name="attr_insight_mod" title="@insight_mod" value="0" disabled/>
+              </div>
+              <!-- Analysis -->
+              <div class="sheet-skill">
+                <label>Analysis</label>
+                <input type="number" name="attr_analysis_mod" title="@analysis_mod" value="0" disabled/>
+              </div>
+              <!-- Stealth -->
+              <div class="sheet-skill">
+                <label>Stealth</label>
+                <input type="number" name="attr_stealth_mod" title="@stealth_mod" value="0" disabled/>
+              </div>
+              <!-- Tradition -->
+              <div class="sheet-skill">
+                <label>Tradition</label>
+                <input type="number" name="attr_tradition_mod" title="@tradition_mod" value="0" disabled/>
+              </div>
+              <!-- Persuasion -->
+              <div class="sheet-skill">
+                <label>Persuasion</label>
+                <input type="number" name="attr_persuasion_mod" title="@persuasion_mod" value="0" disabled/>
               </div>
             </div>
             <!-- Word Sign Fate -->
-            <div class="sheet-words"></div>
+            <div class="sheet-words">
+              <input type="number" name="attr_word_mod" title="@word_mod" value="0" disabled/>
+              <input type="number" name="attr_sign_mod" title="@sign_mod" value="0" disabled/>
+              <input type="number" name="attr_destiny_mod" title="@destiny_mod" value="0" disabled/>
+            </div>
             <!-- Languages and tools -->
-            <div class="sheet-languages"></div>
+            <div class="sheet-languages">
+              <label> Languages </label>
+              <input type="text" name="language_text" title="@language_text" value="Common"/>
+            </div>
+            <!-- Proficiency -->
+            <div class="sheet_proficiency">
+              <label> Proficiency </label>
+              <input type="text" name="proficiency_text" title="@proficiency_text" value="Common"/>
+            </div>
           </div>
           <!-- SECOND -->
           <div class="sheet-main-second sheet-sketchy-right">
             <!-- Armor class -->
             <div class="sheet-ac">
-              <label>AC</label>
+              <label for="attr_ac_mod">AC</label>
+              <input type="number" name="attr_ac_mod" title="@ac_mod" value="0" disabled/>
             </div>
             <!-- Inititative bonus -->
-            <div class="sheet-initiative"></div>
+            <div class="sheet-initiative">
+              <label for="attr_initiative_mod"> Initiative </label>
+              <input type="number" name="attr_initiative_mod" title="@initiative_mod" value="0" disabled/>
+            </div>
             <!-- Speed -->
-            <div class="sheet-speed"></div>
+            <div class="sheet-speed">
+              <label for="attr_speed_mod"> Speed </label>
+              <input type="number" name="attr_speed_mod" title="@speed_mod" value="0" disabled/>
+            </div>
             <!-- Health -->
-            <div class="sheet-health"></div>
+            <div class="sheet-health">
+              <div class="sheet-max-hp">
+                <label for="attr_max_hp">Max HP</label>
+                <input type="number" name="attr_max_hp" title="@max_hp" value="0"/>
+              </div>
+              <div class="sheet-hp">
+                <label for="attr_hp">Current HP</label>
+                <input type="number" name="attr_hp" title="@hp" value="0"/>
+              </div>
+            </div>
             <!-- Hitdices -->
-            <div class="sheet-hitdices"></div>
+            <div class="sheet-hitdices">
+              <div class="sheet-max-hitdices">
+                <label for="attr_max_hitdices">Max HitDices</label>
+                <input type="number" name="attr_max_hitdices" title="@max_hitdices" value="0"/>
+              </div>
+              <div class="sheet-hitdices">
+                <label for="attr_hitdices">Current HP</label>
+                <input type="number" name="attr_hitdices" title="@hp" value="0"/>
+              </div>
+            </div>
             <!-- Death saves -->
-            <div class="sheet-death"></div>
+            <div class="sheet-death">
+              <div class="sheet-death-success">
+                <label> Success </label>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+              </div>
+              <div class="sheet-death-failure">
+                <label> Failure </label>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+              </div>
+            </div>
             <!-- Attacks and spells -->
-            <div class="sheet-attacks"></div>
+            <div class="sheet-attacks">
+              <label> Attacks and Spells</label>
+              <textarea name="attr_attacks"></textarea>
+            </div>
             <!-- Inventory -->
-            <div class="sheet-inventory"></div>
+            <div class="sheet-inventory">
+              <label> Inventory</label>
+              <textarea name="attr_inventory"></textarea>
+            </div>
           </div>
           <!-- THIRD -->
           <div class="sheet-main-third">
             <!-- FLint and Spark Trackers -->
-            <div class="sheet-flint-tracker">FLINT</div>
-            <div class="sheet-spark-tracker"></div>
+            <div class="sheet-spark-tracker">
+              <label> Spark </label>
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+            </div>
+            <div class="sheet-flint-tracker">
+              <label> FLINT </label>
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+            </div>
             <!-- Dices and points-->
-            <div class="sheet-provision-dices"></div>
-            <div class="sheet-veil-dices"></div>
-            <div class="sheet-darkness-points"></div>
+            <div class="sheet-provision-dices">
+              <label> Provision </label>
+              <input type="radio"/>
+              <input type="radio"/>
+              <input type="radio"/>
+              <input type="radio"/>
+              <input type="radio"/>
+              <input type="radio"/>
+            </div>
+            <div class="sheet-veil-dices">
+              <label> Veil </label>
+              <input type="radio"/>
+              <input type="radio"/>
+              <input type="radio"/>
+              <input type="radio"/>
+              <input type="radio"/>
+            </div>
+            <div class="sheet-darkness-points">
+              <label> Darkness </label>
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+            </div>
             <!-- Features -->
-            <div class="sheet-features"></div>
+            <div class="sheet-features">
+              <label> Features </label>
+              <textarea name="attr_features"></textarea>
+            </div>
           </div>
         </div>
       </div>

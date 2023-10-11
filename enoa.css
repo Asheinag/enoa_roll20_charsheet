@@ -106,6 +106,40 @@
   width: 100%;
 }
 
+/* for all tabs CSS */
+/* Border like pen drawing */
+.sheet-sketchy {
+  border: 1px solid #b53a3a;
+  font-size: 2.5rem;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  /* background: #ffffff; */
+  z-index: 0;
+  position: relative;
+  margin-bottom: 15px;
+  
+  &::before {
+      content: '';
+      border: 1px solid #7a3333;
+      /* display: block; */
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+      border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+      margin-bottom: 15px;
+  }
+}
+
+
+.sheet-sketchy-right {
+  border-right: 1px solid #b53a3a;
+}
+
 /*------------- Section-specific CSS -------------*/
 /* MAIN HEADER  */
 .sheet-main-header {
@@ -118,6 +152,16 @@
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   padding: 10px;
+}
+
+.sheet-main-header input {
+  background-color: transparent;
+  width: 100%;
+  /* margin-left: 5px;
+  margin-top: 10px; */
+  text-align: center;
+  /* border: none; */
+
 }
 
 .sheet-logo {
@@ -137,16 +181,6 @@ background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charshee
   display: block;
   background-size: 100%;
   margin: 0 auto;
-
-}
-
-.sheet-main-header input {
-  background-color: transparent;
-  width: 100%;
-  /* margin-left: 5px;
-  margin-top: 10px; */
-  text-align: center;
-  /* border: none; */
 
 }
 
@@ -195,46 +229,50 @@ background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charshee
     'attributes saves'
     'attributes skills'
     'attributes word'
-    'languages languages';
+    'languages languages'
+    'proficiency proficiency';
   gap: 5px;
+  font-size: 8pt;
+  
 }
+
 .sheet-attributes{
   grid-area: attributes;
   width: 100px;
-  height: 600px;
-  background-size: 100%;
+}
+
+.sheet-flint_and_spark_mod{
+  font-size: 6pt;
+}
+.sheet-fleet_spark{
+
+}
+.sheet-attribute{
+
 }
 .sheet-pb{
   grid-area: profbonus;
-  width: 200px;
-  height: 50px;
-  background-size: 100%;
 }
 .sheet-saves{
   grid-area: saves;
-  width: 200px;
-  height: 170px;
-  background-size: 100%;
+
 }
 .sheet-skills{
   grid-area: skills;
-  width: 200px;
-  height: 400px;
-  background-size: 100%;
+
 
 }
 .sheet-words{
   grid-area: word;
-  width: 200px;
-  height: 120px;
-  background-size: 100%;
+
 
 }
 .sheet-languages{
   grid-area: languages;
-  width: 350px;
-  height: 250px;
-  background-size: 100%;
+}
+
+.sheet_proficiency{
+  grid-area: proficiency;
 }
 
 .sheet-main-second{
@@ -245,7 +283,7 @@ background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charshee
     'health health health health health health'
     'hitdices hitdices hitdices death death death'
     'attacks attacks attacks attacks attacks attacks'
-    'inventory inventory inventory inventoryi nventory inventory';
+    'inventory inventory inventory inventory inventory inventory';
 }
 .sheet-ac{
   grid-area: ac;
@@ -366,33 +404,5 @@ background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charshee
 }
 
 
-.sheet-sketchy {
-  border: 1px solid #b53a3a;
-  font-size: 2.5rem;
-  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-  text-transform: uppercase;
-  letter-spacing: 0.3ch;
-  /* background: #ffffff; */
-  z-index: 0;
-  position: relative;
-  margin-bottom: 15px;
-  
-  &::before {
-      content: '';
-      border: 1px solid #7a3333;
-      /* display: block; */
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: -1;
-      top: 50%;
-      left: 50%;
-      transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
-      border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
-      margin-bottom: 15px;
-  }
-}
 
-.sheet-sketchy-right {
-  border-right: 1px solid #b53a3a;
-}
+
