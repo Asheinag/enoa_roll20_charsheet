@@ -246,7 +246,6 @@ background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charshee
     'hitdices hitdices hitdices death death death'
     'attacks attacks attacks attacks attacks attacks'
     'inventory inventory inventory inventoryi nventory inventory';
-  
 }
 .sheet-ac{
   grid-area: ac;
@@ -274,7 +273,7 @@ background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charshee
 }
 
 .sheet-main-third{
-  grid-area: second;
+  grid-area: third;
   display: grid;
   grid-template-areas: 
     'flint_track'
@@ -282,7 +281,7 @@ background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charshee
     'provision'
     'veil'
     'darkness'
-    'features'
+    'features';
 }
 .sheet-flint-tracker{
   grid-area: flint_track;
@@ -392,4 +391,8 @@ background: url("https://raw.githubusercontent.com/Asheinag/enoa_roll20_charshee
       border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
       margin-bottom: 15px;
   }
+}
+
+.sheet-sketchy-right {
+  border-right: 1px solid #b53a3a;
 }
