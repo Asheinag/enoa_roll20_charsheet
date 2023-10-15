@@ -1,428 +1,860 @@
 <main>
-  <div class="sheet-tabs">
-    <!-- MAIN -->
-    <div class="sheet-tab sheet-tab-main">
-      <input type="radio" name="attr_tab" value="main" checked="checked">
-      <span class="sheet-tab-label">Main</span>
-      <div class="sheet-tab-content ">
-        <!-- HEADER -->
-        <div class="sheet-main-header sheet-sketchy">
-          <div class="sheet-logo"></div>
-          <div class="sheet-name">
-            <input type="text" name="attr_name_display" title="@{name_display}">
-          </div>
-          <div class="sheet-character-info">
-            <div class="sheet-race">
-              <input type="text" name="attr_race_display" title="@{race_display}">
-            </div>
-            <div class="sheet-class">
-              <input type="text" name="attr_class_display" title="@{class_display}">
-            </div>
-            <div class="sheet-background">
-              <input type="text" name="attr_back_display" title="@{back_display}">
-            </div>
-            <div class="sheet-player">
-              <input type="text" name="attr_player_display" title="@{player_display}">
-            </div>
-          </div>
-        </div>
-        <!-- CONTAINER -->
-        <div class="sheet-main-container sheet-sketchy">
-          <!-- FIRST -->
-          <div class="sheet-main-first sheet-sketchy-right">
-            <!-- Attributes -->
-            <div class="sheet-attributes">
-              <!-- Flint -->
-              <div class="sheet-flint_and_spark_mod">
-                <label for="attr_flint_mod">Flint</label>
-                <input type="number" class="sheet-fleet_spark" name="attr_flint_mod" title="@{flint_mod}" value="0" disabled/>
-              </div>
-              <!-- Strength -->
-              <div class="sheet-attribute">
-                <label for=""attr_str_mod>
-                  Strength
-                </label>
-                <input type="number" class="sheet-attr" name="attr_str_mod" title="@str_mod" value="0" disabled/>
-                <input type="number" name="attr_str_val" title="@str_val" value="10"/>
-              </div>
-              <!-- Wisdom -->
-              <div class="sheet-attribute">
-                <label for=""attr_wis_mod>
-                  Wisdom
-                </label>
-                <input type="number" class="sheet-attr" name="attr_wis_mod" title="@wis_mod" value="0" disabled/>
-                <input type="number" name="attr_wis_val" title="@wis_val" value="10"/>
-              </div>
-              <!-- Constitution -->
-              <div class="sheet-attribute">
-                <label for=""attr_con_mod>
-                  Constitution
-                </label>
-                <input type="number" class="sheet-attr" name="attr_con_mod" title="@con_mod" value="0" disabled/>
-                <input type="number" name="attr_con_val" title="@con_val" value="10"/>
-              </div>
-              <!-- Spark -->
-              <div class="sheet-flint_and_spark_mod">
-                <label for=""attr_spark_mod>Spark</label>
-                <input type="number" class="sheet-fleet_spark" name="attr_spark_mod" title="@{spark_mod}" value="0" disabled/>
-              </div>
-              <!-- Intellegence -->
-              <div class="sheet-attribute">
-                <label for=""attr_int_mod>
-                  Intellegence
-                </label>
-                <input type="number" class="sheet-attr" name="attr_int_mod" title="@int_mod" value="0" disabled/>
-                <input type="number" name="attr_int_val" title="@int_val" value="10"/>
-              </div>
-              <!-- Dexterity -->
-              <div class="sheet-attribute">
-                <label for=""attr_dex_mod>
-                  Dexterity
-                </label>
-                <input type="number" class="sheet-attr" name="attr_dex_mod" title="@dex_mod" value="0" disabled/>
-                <input type="number" name="attr_dex_val" title="@dex_val" value="10"/>
-              </div>
-              <!-- Charisma -->
-              <div class="sheet-attribute">
-                <label for=""attr_chr_mod>
-                  Charisma
-                </label>
-                <input type="number" class="sheet-attr" name="attr_chr_mod" title="@chr_mod" value="0" disabled/>
-                <input type="number" name="attr_chr_val" title="@chr_val" value="10"/>
-              </div>
-            </div>
-            <!-- Professional Bonus -->
-            <div class="sheet-pb"> 
-              <label>Prof. bonus</label>
-              <input type="number" name="attr_pb_mod" title="@pb_mod" value="0" disabled/>
-            </div>
-            <!-- Save throws -->
-            <div class="sheet-saves">
-              <!-- Save Strength -->
-              <div class="sheet-save">
-                <label>
-                  Strength
-                </label>
-                <input type="number" name="attr_str_mod" title="@str_mod" value="0" disabled/>
-              </div>
-              <!-- Save Wisdom -->
-              <div class="sheet-save">
-                <label>
-                  Wisdom
-                </label>
-                <input type="number" name="attr_wis_mod" title="@wis_mod" value="0" disabled/>
-              </div>
-              <!-- Save Constitution -->
-              <div class="sheet-save">
-                <label>
-                  Constitution
-                </label>
-                <input type="number" name="attr_con_mod" title="@con_mod" value="0" disabled/>
-              </div>
-              <!-- Save Intellegence -->
-              <div class="sheet-save">
-                <label>
-                  Intellegence
-                </label>
-                <input type="number" name="attr_int_mod" title="@int_mod" value="0" disabled/>
-              </div>
-              <!-- Save Dexterity -->
-              <div class="sheet-save">
-                <label>
-                  Dexterity
-                </label>
-                <input type="number" name="attr_dex_mod" title="@dex_mod" value="0" disabled/>
-              </div>
-              <!-- Save Charisma -->
-              <div class="sheet-save">
-                <label>
-                  Charisma
-                </label>
-                <input type="number" name="attr_chr_mod" title="@chr_mod" value="0" disabled/>
-              </div>
-            </div>
-            <!-- Skills -->
-            <div class="sheet-skills">
-              <!-- Acrobatics -->
-              <div class="sheet-skill">
-                <label>Acrobatics</label>
-                <input type="number" name="attr_acrobatics_mod" title="@acrobatics_mod" value="0" disabled/>
-              </div>
-              <!-- Athletics -->
-              <div class="sheet-skill">
-                <label>Athletics</label>
-                <input type="number" name="attr_athletics_mod" title="@athletics_mod" value="0" disabled/>
-              </div>
-              <!-- Perception -->
-              <div class="sheet-skill">
-                <label>Perception</label>
-                <input type="number" name="attr_perception_mod" title="@perception_mod" value="0" disabled/>
-              </div>
-              <!-- Survive -->
-              <div class="sheet-skill">
-                <label>Survive</label>
-                <input type="number" name="attr_survive_mod" title="@survive_mod" value="0" disabled/>
-              </div>
-              <!-- Animal Handling -->
-              <div class="sheet-skill">
-                <label>Animal Handling</label>
-                <input type="number" name="attr_animal_handle_mod" title="@animal_handle_mod" value="0" disabled/>
-              </div>
-              <!-- Intimidation -->
-              <div class="sheet-skill">
-                <label>Intimidation</label>
-                <input type="number" name="attr_intimidation_mod" title="@intimidation_mod" value="0" disabled/>
-              </div>
-              <!-- Performance -->
-              <div class="sheet-skill">
-                <label>Performance</label>
-                <input type="number" name="attr_performance_mod" title="@performance_mod" value="0" disabled/>
-              </div>
-              <!-- Sleight of Hand -->
-              <div class="sheet-skill">
-                <label>Sleight of Hand</label>
-                <input type="number" name="attr_sleight_mod" title="@sleight_mod" value="0" disabled/>
-              </div>
-              <!-- Arcana -->
-              <div class="sheet-skill">
-                <label>Arcana</label>
-                <input type="number" name="attr_arcana_mod" title="@arcana_mod" value="0" disabled/>
-              </div>
-              <!-- Medicine -->
-              <div class="sheet-skill">
-                <label>Medicine</label>
-                <input type="number" name="attr_medicine_mod" title="@medicine_mod" value="0" disabled/>
-              </div>
-              <!-- Deception -->
-              <div class="sheet-skill">
-                <label>Deception</label>
-                <input type="number" name="attr_deception_mod" title="@deception_mod" value="0" disabled/>
-              </div>
-              <!-- Nature -->
-              <div class="sheet-skill">
-                <label>Nature</label>
-                <input type="number" name="attr_nature_mod" title="@nature_mod" value="0" disabled/>
-              </div>
-              <!-- Insight -->
-              <div class="sheet-skill">
-                <label>Insight</label>
-                <input type="number" name="attr_insight_mod" title="@insight_mod" value="0" disabled/>
-              </div>
-              <!-- Analysis -->
-              <div class="sheet-skill">
-                <label>Analysis</label>
-                <input type="number" name="attr_analysis_mod" title="@analysis_mod" value="0" disabled/>
-              </div>
-              <!-- Stealth -->
-              <div class="sheet-skill">
-                <label>Stealth</label>
-                <input type="number" name="attr_stealth_mod" title="@stealth_mod" value="0" disabled/>
-              </div>
-              <!-- Tradition -->
-              <div class="sheet-skill">
-                <label>Tradition</label>
-                <input type="number" name="attr_tradition_mod" title="@tradition_mod" value="0" disabled/>
-              </div>
-              <!-- Persuasion -->
-              <div class="sheet-skill">
-                <label>Persuasion</label>
-                <input type="number" name="attr_persuasion_mod" title="@persuasion_mod" value="0" disabled/>
-              </div>
-            </div>
-            <!-- Word Sign Fate -->
-            <div class="sheet-words">
-              <input type="number" name="attr_word_mod" title="@word_mod" value="0" disabled/>
-              <input type="number" name="attr_sign_mod" title="@sign_mod" value="0" disabled/>
-              <input type="number" name="attr_destiny_mod" title="@destiny_mod" value="0" disabled/>
-            </div>
-            <!-- Languages and tools -->
-            <div class="sheet-languages">
-              <label> Languages </label>
-              <input type="text" name="language_text" title="@language_text" value="Common"/>
-            </div>
-            <!-- Proficiency -->
-            <div class="sheet_proficiency">
-              <label> Proficiency </label>
-              <input type="text" name="proficiency_text" title="@proficiency_text" value="Common"/>
-            </div>
-          </div>
-          <!-- SECOND -->
-          <div class="sheet-main-second sheet-sketchy-right">
-            <!-- Armor class -->
-            <div class="sheet-ac">
-              <label for="attr_ac_mod">AC</label>
-              <input type="number" name="attr_ac_mod" title="@ac_mod" value="0" disabled/>
-            </div>
-            <!-- Inititative bonus -->
-            <div class="sheet-initiative">
-              <label for="attr_initiative_mod"> Initiative </label>
-              <input type="number" name="attr_initiative_mod" title="@initiative_mod" value="0" disabled/>
-            </div>
-            <!-- Speed -->
-            <div class="sheet-speed">
-              <label for="attr_speed_mod"> Speed </label>
-              <input type="number" name="attr_speed_mod" title="@speed_mod" value="0" disabled/>
-            </div>
-            <!-- Health -->
-            <div class="sheet-health">
-              <div class="sheet-max-hp">
-                <label for="attr_max_hp">Max HP</label>
-                <input type="number" name="attr_max_hp" title="@max_hp" value="0"/>
-              </div>
-              <div class="sheet-hp">
-                <label for="attr_hp">Current HP</label>
-                <input type="number" name="attr_hp" title="@hp" value="0"/>
-              </div>
-            </div>
-            <!-- Hitdices -->
-            <div class="sheet-hitdices">
-              <div class="sheet-max-hitdices">
-                <label for="attr_max_hitdices">Max HitDices</label>
-                <input type="number" name="attr_max_hitdices" title="@max_hitdices" value="0"/>
-              </div>
-              <div class="sheet-hitdices">
-                <label for="attr_hitdices">Current HP</label>
-                <input type="number" name="attr_hitdices" title="@hp" value="0"/>
-              </div>
-            </div>
-            <!-- Death saves -->
-            <div class="sheet-death">
-              <div class="sheet-death-success">
-                <label> Success </label>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-              </div>
-              <div class="sheet-death-failure">
-                <label> Failure </label>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-              </div>
-            </div>
-            <!-- Attacks and spells -->
-            <div class="sheet-attacks">
-              <label> Attacks and Spells</label>
-              <textarea name="attr_attacks"></textarea>
-            </div>
-            <!-- Inventory -->
-            <div class="sheet-inventory">
-              <label> Inventory</label>
-              <textarea name="attr_inventory"></textarea>
-            </div>
-          </div>
-          <!-- THIRD -->
-          <div class="sheet-main-third">
-            <!-- FLint and Spark Trackers -->
-            <div class="sheet-spark-tracker">
-              <label> Spark </label>
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-            </div>
-            <div class="sheet-flint-tracker">
-              <label> FLINT </label>
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-            </div>
-            <!-- Dices and points-->
-            <div class="sheet-provision-dices">
-              <label> Provision </label>
-              <input type="radio"/>
-              <input type="radio"/>
-              <input type="radio"/>
-              <input type="radio"/>
-              <input type="radio"/>
-              <input type="radio"/>
-            </div>
-            <div class="sheet-veil-dices">
-              <label> Veil </label>
-              <input type="radio"/>
-              <input type="radio"/>
-              <input type="radio"/>
-              <input type="radio"/>
-              <input type="radio"/>
-            </div>
-            <div class="sheet-darkness-points">
-              <label> Darkness </label>
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-              <input type="checkbox">
-            </div>
-            <!-- Features -->
-            <div class="sheet-features">
-              <label> Features </label>
-              <textarea name="attr_features"></textarea>
-            </div>
-          </div>
-        </div>
+  <input type="radio" id="main" name="charlist-item" value="main" checked>
+  <label for="main">Main</label>
+  <input type="radio" id="details" name="charlist-item" value="details">
+  <label for="details">Details</label>
+  <input type="radio" id="chants" name="charlist-item" value="chants">
+  <label for="chants">Chants</label>
+  <input type="radio" id="spells" name="charlist-item" value="spells">
+  <label for="spells">Spells</label>
+  <input type="radio" id="settings" name="charlist-item" value="settings">
+  <label for="settings">Settings</label>
+
+  <!-- Main -->
+  <div class="sheet-main">
+    <!-- Header -->
+    <div class="sheet-main-header">
+      <h1> ENOA </h1>
+      <input type="text" id="attr_character_name" name="attr_character_name" title="@{character_name}">
+      <label for="attr_character_name">Character Name</label>
+      <!-- Edit -->
+      <div class="sheet-main-header-edit">
+        <!-- TODO -->
       </div>
+      <!-- Display -->
+      <div class="sheet-main-header-display">
+        <input type="text" id="attr_class_display" name="attr_class_display" title="@{class_display}">
+        <label for="attr_class_display">Class and Level</label>
+        <input type="text" id="attr_background" name="attr_background" title="@{background}">
+        <label for="attr_background">Background</label>
+        <input type="text" id="attr_race_display" name="attr_class_display" title="@{race_display}">
+        <label for="attr_race_display">Race</label>
+      </div>
+      <input type="text" id="attr_player_name" name="attr_player_name" title="@{player_name}">
+      <label for="attr_player_name">Player and campany</label>
     </div>
-    <!-- DETAILS -->
-    <div class="sheet-tab sheet-tab-details">
-      <input type="radio" name="attr_tab" value="details" >
-      <span class="sheet-tab-label">Details</span>
-      <div class="sheet-tab-content">
-        <div class="sheet-header ">
-          <h1>Example DETAILS</h1>
-          <span>The Template Sheet</span>
+    <div class="sheet-main-container">
+      <!-- Attributes -->
+      <div class="sheet-attributes">
+        <!-- Flint -->
+        <div class="sheet-flint">
+          <input type="number" id="attr_flint_mod" name="attr_flint_mod" value="3" title="@{flint_mod}" disabled />
+          <button 
+          type="roll"
+           name="roll_flint_bonus"
+            value="&{template:rolls} {{title=Flint}} {{subtitle=@{character_name} }} {{roll= [[d20+@{flint_mod}[flint_mod] ]]}}">
+            Flint Bonus
+          </button>
+        </div>
+        <!-- Strength -->
+        <div class="sheet-attribute">
+          <input type="number" id="attr_strength_mod" name="attr_strength_mod" value="0" title="@{strength_mod}"
+            disabled />
+          <input type="number" id="attr_strength_base" name="attr_strength_base" value="0" title="@{strength_base}" />
+          <button type="roll" name="roll_strength" value="">
+            Strength
+          </button>
+        </div>
+        <!-- Wisdom -->
+        <div class="sheet-attribute">
+          <input type="number" id="attr_wisdom_mod" name="attr_wisdom_mod" value="0" title="@{wisdom_mod}" disabled />
+          <input type="number" id="attr_wisdom_base" name="attr_wisdom_base" value="0" title="@{wisdom_base}" />
+          <button type="roll" name="roll_wisdom" value="">
+            Wisdom
+          </button>
+        </div>
+        <!-- Constitution -->
+        <div class="sheet-attribute">
+          <input type="number" id="attr_constitution_mod" name="attr_constitution_mod" value="0"
+            title="@{constitution_mod}" disabled />
+          <input type="number" id="attr_constitution_base" name="attr_constitution_base" value="0"
+            title="@{constitution_base}" />
+          <button type="roll" name="roll_constitution" value="">
+            Constitution
+          </button>
+        </div>
+        <!-- Spark -->
+        <div class="sheet-spark">
+          <input type="number" id="attr_spark_mod" name="attr_spark_mod" value="0" title="@{spark_mod}" disabled />
+          <button type="roll" name="roll_spark_bonus" value="">
+            Spark Bonus
+          </button>
+        </div>
+        <!-- Intelligence -->
+        <div class="sheet-attribute">
+          <input type="number" id="attr_intelligence_mod" name="attr_intelligence_mod" value="0"
+            title="@{intelligence_mod}" disabled />
+          <input type="number" id="attr_intelligence_base" name="attr_intelligence_base" value="0"
+            title="@{intelligence_base}" />
+          <button type="roll" name="roll_intelligence" value="">
+            Intelligence
+          </button>
+        </div>
+        <!-- Dexterity -->
+        <div class="sheet-attribute">
+          <input type="number" id="attr_dexterity_mod" name="attr_dexterity_mod" value="0" title="@{dexterity_mod}"
+            disabled />
+          <input type="number" id="attr_dexterity_base" name="attr_dexterity_base" value="0"
+            title="@{dexterity_base}" />
+          <button type="roll" name="roll_dexterity" value="">
+            Dexterity
+          </button>
+        </div>
+        <!-- Charisma -->
+        <div class="sheet-attribute">
+          <input type="number" id="attr_charisma_mod" name="attr_charisma_mod" value="0" title="@{charisma_mod}"
+            disabled />
+          <input type="number" id="attr_charisma_base" name="attr_charisma_base" value="0" title="@{charisma_base}" />
+          <button type="roll" name="roll_charisma" value="">
+            Charisma
+          </button>
         </div>
       </div>
-    </div>
-    <!-- CHANTS -->
-    <div class="sheet-tab sheet-tab-chants">
-      <input type="radio" name="attr_tab" value="chants" >
-      <span class="sheet-tab-label">Chants</span>
-      <div class="sheet-tab-content">
-        <div class="sheet-header ">
-          <h1>Example CHANTS</h1>
-          <span>The Template Sheet</span>
-        </div>
+      <!-- Proficiency bonus-->
+      <div class="sheet-proficiency-bonus">
+        <span>Proficiency Bonus</span>
+        <span name="attr_pb" title="@{pb}"></span>
       </div>
-    </div>
-    <!-- SPELLS -->
-    <div class="sheet-tab sheet-tab-spells">
-      <input type="radio" name="attr_tab" value="spells" >
-      <span class="sheet-tab-label">SPELLS</span>
-      <div class="sheet-tab-content">
-        <div class="sheet-header ">
-          <h1>Example SPELLS</h1>
-          <span>The Template Sheet</span>
+      <!-- Savethrows -->
+      <div class="sheet-saves">
+        <!-- Strength Save -->
+        <div class="sheet-savethrow">
+          <input type="checkbox" name="attr_strength_save_prof" title="@{strength_save_prof}" value="(@{pb})">
+          <span></span>
+          <input type="number" id="attr_strength_save_bonus" name="attr_strength_save_bonus" value="0"
+            title="@{strength_save_bonus}" disabled />
+          <button type="roll" name="roll_strength_save" value="">
+            Strength
+          </button>
         </div>
-      </div>
-    </div>
-    <!-- SETTINGS -->
-    <div class="sheet-tab sheet-tab-settings">
-      <input type="radio" name="attr_tab" value="settings" >
-      <span class="sheet-tab-label">SETTINGS</span>
-      <div class="sheet-tab-content">
-        <div class="sheet-header ">
-          <h1>Example SETTINGS</h1>
-          <span>The Template Sheet</span>
+        <!-- Wisdom Save -->
+        <div class="sheet-savethrow">
+          <input type="checkbox" name="attr_wisdom_save_prof" title="@{wisdom_save_prof}" value="(@{pb})">
+          <span></span>
+          <input type="number" id="attr_wisdom_save_bonus" name="attr_wisdom_save_bonus" value="0"
+            title="@{wisdom_save_bonus}" disabled />
+          <button type="roll" name="roll_wisdom_save" value="">
+            Wisdom
+          </button>
         </div>
+        <!-- Constitution Save-->
+        <div class="sheet-savethrow">
+          <input type="checkbox" name="attr_constitution_save_prof" title="@{constitution_save_prof}" value="(@{pb})">
+          <span></span>
+          <input type="number" id="attr_constitution_save_bonus" name="attr_constitution_save_bonus" value="0"
+            title="@{constitution_save_bonus}" disabled />
+          <button type="roll" name="roll_constitution_save" value="">
+            Constitution
+          </button>
+        </div>
+        <!-- Intelligence Save-->
+        <div class="sheet-savethrow">
+          <input type="checkbox" name="attr_intelligence_save_prof" title="@{intelligence_save_prof}" value="(@{pb})">
+          <span></span>
+          <input type="number" id="attr_intelligence_save_bonus" name="attr_intelligence_save_bonus" value="0"
+            title="@{intelligence_save_bonus}" disabled />
+          <button type="roll" name="roll_intelligence_save" value="">
+            Intelligence
+          </button>
+        </div>
+        <!-- Dexterity Save -->
+        <div class="sheet-savethrow">
+          <input type="checkbox" name="attr_dexterity_save_prof" title="@{dexterity_save_prof}" value="(@{pb})">
+          <span></span>
+          <input type="number" id="attr_dexterity_save_bonus" name="attr_dexterity_save_bonus" value="0"
+            title="@{dexterity_save_bonus}" disabled />
+          <button type="roll" name="roll_dexterity_save" value="">
+            Dexterity
+          </button>
+        </div>
+        <!-- Charisma Save -->
+        <div class="sheet-savethrow">
+          <input type="checkbox" name="attr_charisma_save_prof" title="@{charisma_save_prof}" value="(@{pb})">
+          <span></span>
+          <input type="number" id="attr_charisma_save_bonus" name="attr_charisma_save_bonus" value="0"
+            title="@{charisma_save_bonus}" disabled />
+          <button type="roll" name="roll_charisma_save" value="">
+            Charisma
+          </button>
+        </div>
+        <span>Savethrows</span>
       </div>
+      <!-- Skills -->
+      <div class="sheet-skills">
+        <!-- Acrobatics -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_acrobatics_prof" title="@{acrobatics_prof}"
+            value="(@{pb}*@{acrobatics_type})">
+          <span></span>
+          <span name="attr_acrobatics_bonus" title="@{acrobatics_bonus}">0</span>
+          <button type="roll" name="roll_acrobatics" value="">
+            Acrobatics
+          </button>
+          <select name="attr_acrobatics_attribute" title="@{acrobatics_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity" selected="selected">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Athletics -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_athletics_prof" title="@{athletics_prof}" value="(@{pb}*@{athletics_type})">
+          <span></span>
+          <span name='attr_athletics_bonus' title='@{athletics_bonus}'>0</span>
+          <button type='roll' name='roll_athletics' value=''>
+            Athletics
+          </button>
+          <select name="attr_athletics_attribute" title="@{athletics_attribute}">
+            <option value="Strength" selected="selected">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Perception -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_perception_prof" title="@{perception_prof}"
+            value="(@{pb}*@{perception_type})">
+          <span></span>
+          <span name='attr_perception_bonus' title='@{perception_bonus}'>0</span>
+          <button type='roll' name='roll_perception' value=''>
+            Perception
+          </button>
+          <select name="attr_perception_attribute" title="@{perception_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom" selected="selected">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Survival -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_survival_prof" title="@{survival_prof}" value="(@{pb}*@{survival_type})">
+          <span></span>
+          <span name='attr_survival_bonus' title='@{survival_bonus}'>0</span>
+          <button type='roll' name='roll_survival' value=''>
+            Survival
+          </button>
+          <select name="attr_survival_attribute" title="@{survival_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom" selected="selected">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Animal Handling -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_animal_handling_prof" title="@{animal_handling_prof}"
+            value="(@{pb}*@{animal_handling_type})">
+          <span></span>
+          <span name='attr_animal_handling_bonus' title='@{animal_handling_bonus}'>0</span>
+          <button type='roll' name='roll_animal_handling' value=''>
+            Animal Handling
+          </button>
+          <select name="attr_animal_handling_attribute" title="@{animal_handling_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom" selected="selected">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Intimidation -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_intimidation_prof" title="@{intimidation_prof}"
+            value="(@{pb}*@{intimidation_type})">
+          <span></span>
+          <span name='attr_intimidation_bonus' title='@{intimidation_bonus}'>0</span>
+          <button type='roll' name='roll_intimidation' value=''>
+            Intimidation
+          </button>
+          <select name="attr_intimidation_attribute" title="@{intimidation_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma" selected="selected">Cha</option>
+          </select>
+        </div>
+        <!-- Performance -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_performance_prof" title="@{performance_prof}"
+            value="(@{pb}*@{performance_type})">
+          <span></span>
+          <span name='attr_performance_bonus' title='@{performance_bonus}'>0</span>
+          <button type='roll' name='roll_performance' value=''>
+            Performance
+          </button>
+          <select name="attr_performance_attribute" title="@{performance_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma" selected="selected">Cha</option>
+          </select>
+        </div>
+        <!-- Sleight of Hand -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_sleight_of_hand_prof" title="@{sleight_of_hand_prof}"
+            value="(@{pb}*@{sleight_of_hand_type})">
+          <span></span>
+          <span name='attr_sleight_of_hand_bonus' title='@{sleight_of_hand_bonus}'>0</span>
+          <button type='roll' name='roll_sleight_of_hand' value=''>
+            Sleight of Hand
+          </button>
+          <select name="attr_sleight_of_hand_attribute" title="@{sleight_of_hand_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity" selected="selected">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Arcana -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_arcana_prof" title="@{arcana_prof}" value="(@{pb}*@{arcana_type})">
+          <span></span>
+          <span name='attr_arcana_bonus' title='@{arcana_bonus}'>0</span>
+          <button type='roll' name='roll_arcana' value=''>
+            Arcana
+          </button>
+          <select name="attr_arcana_attribute" title="@{arcana_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence" selected="selected">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Medicine -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_medicine_prof" title="@{medicine_prof}" value="(@{pb}*@{medicine_type})">
+          <span></span>
+          <span name='attr_medicine_bonus' title='@{medicine_bonus}'>0</span>
+          <button type='roll' name='roll_medicine' value=''>
+            Medicine
+          </button>
+          <select name="attr_medicine_attribute" title="@{medicine_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom" selected="selected">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Deception -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_deception_prof" title="@{deception_prof}" value="(@{pb}*@{deception_type})">
+          <span></span>
+          <span name='attr_deception_bonus' title='@{deception_bonus}'>0</span>
+          <button type='roll' name='roll_deception' value=''>
+            Deception
+          </button>
+          <select name="attr_deception_attribute" title="@{deception_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma" selected="selected">Cha</option>
+          </select>
+        </div>
+        <!-- Nature -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_nature_prof" title="@{nature_prof}" value="(@{pb}*@{nature_type})">
+          <span></span>
+          <span name='attr_nature_bonus' title='@{nature_bonus}'>0</span>
+          <button type='roll' name='roll_nature' value=''>
+            Nature
+          </button>
+          <select name="attr_nature_attribute" title="@{nature_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence" selected="selected">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Insight -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_insight_prof" title="@{insight_prof}" value="(@{pb}*@{insight_type})">
+          <span></span>
+          <span name='attr_insight_bonus' title='@{insight_bonus}'>0</span>
+          <button type='roll' name='roll_insight' value=''>
+            Insight
+          </button>
+          <select name="attr_insight_attribute" title="@{insight_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom" selected="selected">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Investigation -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_investigation_prof" title="@{investigation_prof}"
+            value="(@{pb}*@{investigation_type})">
+          <span></span>
+          <span name='attr_investigation_bonus' title='@{investigation_bonus}'>0</span>
+          <button type='roll' name='roll_investigation' value=''>
+            Investigation
+          </button>
+          <select name="attr_investigation_attribute" title="@{investigation_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence" selected="selected">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Stealth -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_stealth_prof" title="@{stealth_prof}" value="(@{pb}*@{stealth_type})">
+          <span></span>
+          <span name='attr_stealth_bonus' title='@{stealth_bonus}'>0</span>
+          <button type='roll' name='roll_stealth' value=''>
+            Stealth
+          </button>
+          <select name="attr_stealth_attribute" title="@{stealth_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity" selected="selected">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Traditions -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_traditions_prof" title="@{traditions_prof}"
+            value="(@{pb}*@{traditions_type})">
+          <span></span>
+          <span name='attr_traditions_bonus' title='@{traditions_bonus}'>0</span>
+          <button type='roll' name='roll_traditions' value=''>
+            Traditions
+          </button>
+          <select name="attr_traditions_attribute" title="@{traditions_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence" selected="selected">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma">Cha</option>
+          </select>
+        </div>
+        <!-- Persuasion -->
+        <div class="sheet-skill">
+          <input type="checkbox" name="attr_persuasion_prof" title="@{persuasion_prof}"
+            value="(@{pb}*@{persuasion_type})">
+          <span></span>
+          <span name='attr_persuasion_bonus' title='@{persuasion_bonus}'>0</span>
+          <button type='roll' name='roll_persuasion' value=''>
+            Persuasion
+          </button>
+          <select name="attr_persuasion_attribute" title="@{persuasion_attribute}">
+            <option value="Strength">Str</option>
+            <option value="Wisdom">Wis</option>
+            <option value="Constitution">Con</option>
+            <option value="Intelligence">Int</option>
+            <option value="Dexterity">Dex</option>
+            <option value="Charisma" selected="selected">Cha</option>
+          </select>
+        </div>
+        <span>Skills</span>
+      </div>
+      <!-- Word Destiny Sign -->
+      <div class="sheet-word-sign-destiny">
+        <span>Word</span>
+        <span>Sign</span>
+        <span>Destiny</span>
+      </div>
+      <!-- Proficiencies -->
+      <!-- <div class="sheet-proficiencies">
+        <fieldset class="repeating_proficiencies">
+          <div class="sheet-fieldset-item sheet-fieldset-item-proficiency">
+            <div class="sheet-checkbox-cog">
+              <input type="checkbox" name="attr_options-flag" checked="checked"><span></span>
+              <span class="sheet-toggle-icon"></span>
+            </div>
+            <input type="checkbox" name="attr_options-flag" checked="checked" class="sheet-toggle">
+            <div class="sheet-toggle-checked">
+              <div class="sheet-form">
+                <div class="sheet-form-header">Edit Proficiency</div>
+                <div class="sheet-form-body">
+                  <div class="sheet-form-group">
+                    <select name="attr_prof_type">
+                      <option value="LANGUAGE" selected="selected">Language</option>
+                      <option value="WEAPON">Weapon</option>
+                      <option value="ARMOR">Armor</option>
+                      <option value="OTHER">Other</option>
+                    </select>
+                    <input type="text" name="attr_name">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sheet-toggle-unchecked">
+              <div class="sheet-pc-proficiency">
+                <button type="roll" name="roll_output"
+                  value="@{wtype}&{template:traits} @{charname_output} {{name=@{prof_type} PROFICIENCY}} {{description=@{name}}}">
+                  <span name="attr_prof_type"></span>
+                  <span name="attr_name"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <span>Languages</span>
+      </div> -->
+      <!-- Mastery -->
+      <!-- <div class="sheet-mastery">
+        <fieldset class="repeating_tool">
+          <div class="sheet-fieldset-item sheet-fieldset-item-tool">
+            <div class="sheet-checkbox-cog">
+              <input type="checkbox" name="attr_options-flag" checked="checked"><span></span>
+              <span class="sheet-toggle-icon"></span>
+            </div>
+            <input type="checkbox" name="attr_options-flag" checked="checked" class="sheet-toggle">
+            <div class="sheet-toggle-checked">
+              <div class="sheet-form">
+                <div class="sheet-form-header">Edit Proficiency</div>
+                <div class="sheet-form-body">
+                  <div class="sheet-form-group">
+                    <label>Name:</label>
+                    <input type="text" name="attr_toolname">
+                  </div>
+                  <div class="sheet-form-group">
+                    <label>Proficiency Bonus:</label>
+                    <select name="attr_toolbonus_base">
+                      <option value="(@{pb})" selected="selected">PROFICIENT</option>
+                      <option value="(@{pb}*2)">EXPERTISE</option>
+                      <option value="(floor(@{pb}/2))">JACK OF ALL TRADES</option>
+                    </select>
+                  </div>
+                  <div class="sheet-form-group">
+                    <label>Attribute:</label>
+                    <select name="attr_toolattr_base">
+                      <option value="@{strength_mod}" selected="selected">Str</option>
+                      <option value="@{wisdom_mod}">Wis</option>
+                      <option value="@{constitution_mod}">Con</option>
+                      <option value="@{intelligence_mod}">Int</option>
+                      <option value="@{dexterity_mod}">Dex</option>
+                      <option value="@{charisma_mod}">Cha</option>
+                      <option
+                        value="?{Attribute?|Strength,@{strength_mod}|Dexterity,@{dexterity_mod}|Constitution,@{constitution_mod}|Intelligence,@{intelligence_mod}|Wisdom,@{wisdom_mod}|Charisma,@{charisma_mod}}">
+                        Query</option>
+                    </select>
+                    <label>Mods:</label>
+                    <input type="text" name="attr_tool_mod" title="@{tool_mod}" value="0">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sheet-toggle-unchecked">
+              <div class="sheet-pc-tool">
+                <button type="roll" name="roll_tool" value="">
+                  <span></span>
+                  <span name="attr_toolbonus_display"></span>
+                  <span name="attr_toolname"></span>
+                  <input type="hidden" name="attr_toolbonus">
+                  <span name="attr_toolattr"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <span>Proficiencies</span>
+      </div> -->
+      <!-- Armor Class -->
+      <!-- <div class="sheet-ac">
+        <input type="text" name="attr_ac" title="@{ac}">
+        <button type="roll" name="roll_defence" value="">
+          Armor Class
+        </button>
+      </div> -->
+      <!-- Initiative -->
+      <!-- <div class="sheet-initiative">
+        <span name="attr_initiative_bonus" title="@{initiative_bonus}"></span>
+        <button type="roll" name="roll_initiative" value="">
+          Initiative
+        </button>
+      </div> -->
+      <!-- Speed -->
+      <!-- <div class="sheet-speed">
+        <input type="text" name="attr_speed" title="@{speed}">
+        <span>Speed</span>
+      </div> -->
+      <!-- Max HP -->
+      <!-- <div class="sheet-hp-max">
+        <span>HP MAX</span>
+        <input type="text" name="attr_hp_max" title="@{hp_max}">
+      </div> -->
+      <!-- Current HP -->
+      <!-- <div class="sheet-hp-current">
+        <span>HP Current</span>
+        <input type="text" name="attr_hp" title="@{hp}">
+        <input type="text" name="attr_hp_temp" title="@{hp_temp}">
+      </div> -->
+      <!-- Hit Dices -->
+      <!-- <div class="sheet-hit-dices">
+        <div class="sheet-hot-dices-all">
+          <span>All</span>
+          <input type="text" name="attr_hit_dice_max" title="@{hit_dice_max}">
+        </div>
+        <div class="sheet-hot-dices-current">
+          <input type="text" name="attr_hit_dice" title="@{hit_dice}">
+          <button type="roll" name="roll_hit_dice" value="">
+            Hit Dice
+          </button>
+        </div>
+      </div> -->
+      <!-- Death saves -->
+      <!-- <div class="sheet-deathsaves">
+        <div class="sheet-death-save-success">
+          <span>Success</span>
+          <input type="checkbox" name="attr_deathsave_success1" title="@{deathsave_success1}">
+          <input type="checkbox" name="attr_deathsave_success2" title="@{deathsave_success2}">
+          <input type="checkbox" name="attr_deathsave_success3" title="@{deathsave_success3}">
+        </div>
+        <div class="sheet-death-save-failure">
+          <span>Failure</span>
+          <input type="checkbox" name="attr_deathsave_fail1" title="@{deathsave_fail1}">
+          <input type="checkbox" name="attr_deathsave_fail2" title="@{deathsave_fail2}">
+          <input type="checkbox" name="attr_deathsave_fail3" title="@{deathsave_fail3}">
+        </div>
+        <button type="roll" name="roll_death_save" value="">
+          Death Saves
+        </button>
+      </div> -->
+      <!-- Attacks -->
+      <!-- <div class="sheet-attacks">
+        <fieldset class="repeating_attack">
+          <div class="sheet-fieldset-item">
+            <div class="sheet-checkbox-cog">
+              <input type="checkbox" name="attr_options-flag" checked="checked"><span></span>
+              <span class="sheet-toggle-icon"></span>
+            </div>
+            <input type="checkbox" name="attr_options-flag" checked="checked" class="sheet-toggle" hidden>
+            <div class="sheet-toggle-checked">
+              <div class="sheet-form">
+                <div class="sheet-form-header">Edit Attack</div>
+                <div class="sheet-form-body">
+                  <div class="sheet-form-group">
+                    <label>Name:</label>
+                    <input type="text" name="attr_atkname">
+                  </div>
+                  <div class="sheet-form-group">
+                    <label class="sheet-form-checkbox">
+                      <input type="checkbox" name="attr_atkflag" value="{{attack=1}}" checked="checked">
+                      <span>Attack:</span>
+                    </label>
+                  </div>
+                  <div class="sheet-form-group">
+                    <select name="attr_atkattr_base">
+                      <option value="@{strength_mod}" selected="selected">STR</option>
+                      <option value="@{wisdom_mod}">WIS</option>
+                      <option value="@{constitution_mod}">CON</option>
+                      <option value="@{intelligence_mod}">INT</option>
+                      <option value="@{dexterity_mod}">DEX</option>
+                      <option value="@{charisma_mod}">CHA</option>
+                      <option value="spell">SPELL</option>
+                      <option value="0">-</option>
+                    </select>
+                    <span>+</span>
+                    <input type="text" name="attr_atkmod" placeholder="0">
+                    <label class="sheet-form-checkbox">
+                      <input type="checkbox" name="attr_atkprofflag" value="(@{pb})" checked="checked">
+                      <span>Proficient</span>
+                    </label>
+                  </div>
+                  <div class="sheet-form-group">
+                    <label>Range:</label>
+                    <input type="text" name="attr_atkrange">
+                  </div>
+                  <div class="sheet-form-group">
+                    <label>Magic Bonus:</label>
+                    <input type="text" name="attr_atkmagic">
+                    <label>Crit Range:</label>
+                    <input type="text" name="attr_atkcritrange" value="20">
+                  </div>
+                  <div class="sheet-form-group">
+                    <label class="sheet-form-checkbox">
+                      <input type="checkbox" name="attr_dmgflag" value="{{damage=1}} {{dmg1flag=1}}" checked="checked">
+                      <span>Damage 1</span>
+                    </label>
+                  </div>
+                  <div class="sheet-form-group">
+                    <label>Dmg</label>
+                    <input type="text" name="attr_dmgbase">
+                    <span>+</span>
+                    <select name="attr_dmgattr">
+                      <option value="@{strength_mod}" selected="selected">STR</option>
+                      <option value="@{wisdom_mod}">WIS</option>
+                      <option value="@{constitution_mod}">CON</option>
+                      <option value="@{intelligence_mod}">INT</option>
+                      <option value="@{dexterity_mod}">DEX</option>
+                      <option value="@{charisma_mod}">CHA</option>
+                      <option value="spell">SPELL</option>
+                      <option value="0">-</option>
+                    </select>
+                    <span>+</span>
+                    <label>Mod</label>
+                    <input type="text" name="attr_dmgmod">
+                  </div>
+                  <div class="sheet-form-group">
+                    <label>Type:</label>
+                    <input type="text" name="attr_dmgtype">
+                    <label>Crit:</label>
+                    <input type="text" name="attr_dmgcustcrit">
+                  </div>
+                  <div class="sheet-form-group">
+                    <label class="sheet-form-checkbox">
+                      <input type="checkbox" name="attr_dmg2flag" value="{{damage=1}} {{dmg2flag=1}}">
+                      <span>Damage 2</span>
+                    </label>
+                  </div>
+                  <div class="sheet-form-group">
+                    <label>Dmg</label>
+                    <input type="text" name="attr_dmg2base">
+                    <span>+</span>
+                    <select name="attr_dmg2attr">
+                      <option value="@{strength_mod}">STR</option>
+                      <option value="@{wisdom_mod}">WIS</option>
+                      <option value="@{constitution_mod}">CON</option>
+                      <option value="@{intelligence_mod}">INT</option>
+                      <option value="@{dexterity_mod}">DEX</option>
+                      <option value="@{charisma_mod}">CHA</option>
+                      <option value="spell">SPELL</option>
+                      <option value="0" selected="selected">-</option>
+                    </select>
+                    <span>+</span>
+                    <label>Mod</label>
+                    <input type="text" name="attr_dmg2mod">
+                  </div>
+                  <div class="sheet-form-group">
+                    <label>Type:</label>
+                    <input type="text" name="attr_dmg2type">
+                    <label>Crit:</label>
+                    <input type="text" name="attr_dmg2custcrit">
+                  </div>
+                  <div class="sheet-form-group">
+                    <label class="sheet-form-checkbox">
+                      <input type="checkbox" name="attr_saveflag"
+                        value="{{save=1}} {{saveattr=@{saveattr}}} {{savedesc=@{saveeffect}}} {{savedc=[[[[@{savedc}]][SAVE]]]}}">
+                      <span>Saving Throw</span>
+                    </label>
+                  </div>
+                  <div class="sheet-form-group">
+                    <select name="attr_saveattr">
+                      <option value="Strength" selected="selected">STR</option>
+                      <option value="Wisdom">WIS</option>
+                      <option value="Constitution">CON</option>
+                      <option value="Intelligence">INT</option>
+                      <option value="Dexterity">DEX</option>
+                      <option value="Charisma">CHA</option>
+                    </select>
+                    <label>vs DC:</label>
+                    <select name="attr_savedc">
+                      <option value="(@{spell_save_dc})" selected="selected">SPELL</option>
+                      <option value="(@{strength_mod}+8+@{spell_dc_mod}+@{pb})">STR</option>
+                      <option value="(@{wisdom_mod}+8+@{spell_dc_mod}+@{pb})">WIS</option>
+                      <option value="(@{constitution_mod}+8+@{spell_dc_mod}+@{pb})">CON</option>
+                      <option value="(@{intelligence_mod}+8+@{spell_dc_mod}+@{pb})">INT</option>
+                      <option value="(@{dexterity_mod}+8+@{spell_dc_mod}+@{pb})">DEX</option>
+                      <option value="(@{charisma_mod}+8+@{spell_dc_mod}+@{pb})">CHA</option>
+                      <option value="(@{saveflat})">FLAT</option>
+                    </select>
+                    <input type="hidden" name="attr_savedc">
+                    <input type="text" name="attr_saveflat" value="10">
+                  </div>
+                  <div class="sheet-form-group">
+                    <label>Save Effect:</label>
+                    <input type="text" name="attr_saveeffect">
+                  </div>
+                  <div class="sheet-form-group">
+                    <label>Ammunition:</label>
+                    <input type="text" name="attr_ammo">
+                  </div>
+                  <div class="sheet-form-group sheet-form-group-column">
+                    <label>Description:</label>
+                    <textarea name="attr_atk_desc"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sheet-toggle-unchecked">
+              <div class="sheet-pc-attack">
+                <input type="text" name="attr_atkbonus" class="sheet-hidden" value="">
+                <input type="text" name="attr_atkdmgtype" class="sheet-hidden" value="">
+                <button type="roll" name="roll_attack" value="@{rollbase}" class="sheet-attack-button">
+                  <span name="attr_atkname"></span>
+                  <span name="attr_atkbonus"></span>
+                  <span name="attr_atkdmgtype"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <input type="hidden" name="attr_rollbase">
+          <input type="hidden" name="attr_rollbase_dmg">
+          <input type="hidden" name="attr_rollbase_crit">
+          <input type="hidden" name="attr_hldmg">
+          <input type="hidden" name="attr_spelllevel">
+          <input type="hidden" name="attr_itemid">
+          <input type="hidden" name="attr_spellid">
+          <input type="hidden" name="attr_spell_innate">
+          <input type="hidden" name="attr_versatile_alt">
+          <button type="roll" name="roll_attack_dmg" value="@{rollbase_dmg}" class="sheet-hidden"></button>
+          <button type="roll" name="roll_attack_crit" value="@{rollbase_crit}" class="sheet-hidden"></button>
+        </fieldset>
+      </div> -->
+      <!-- Inventory -->
+      <!-- Flint and  Spark Trackers -->
+      <!-- Dices Trackers -->
+      <!-- Features -->
+
     </div>
   </div>
+  <!-- Details -->
+  <div class="sheet-details">
+    <div class="sheet-details-header"></div>
+    <div class="sheet-details-container"></div>
+  </div>
+  <!-- Chants -->
+  <div class="sheet-chants">
+    <div class="sheet-chants-header"></div>
+    <div class="sheet-chants-container"></div>
+  </div>
+  <!-- Spells -->
+  <div class="sheet-spells">
+    <div class="sheet-spells-header"></div>
+    <div class="sheet-spells-container"></div>
+  </div>
+  <!-- Settings -->
+  <div class="sheet-settings">
+    <div class="sheet-settings-header"></div>
+    <div class="sheet-settings-container"></div>
+  </div>
+
 </main>
-
-<!-- Datalists & thing that don't show directly on sheet -->
-
-<datalist id="class">
-  <option value="Fighter">Fighter</option>
-  <option value="Mage">Mage</option>
-  <option value="Expert">Expert</option>
-</datalist>
 
 <!-- roll template -->
 
