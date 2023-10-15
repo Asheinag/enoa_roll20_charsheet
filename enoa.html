@@ -38,18 +38,15 @@
       <div class="sheet-attributes">
         <!-- Flint -->
         <div class="sheet-flint">
-          <input type="number" id="attr_flint_mod" name="attr_flint_mod" value="3" title="@{flint_mod}" disabled />
-          <button 
-          type="roll"
-           name="roll_flint_bonus"
+          <span name="attr_flint_mod" title="@{flint_mod}">0</span>
+          <button type="roll" name="roll_flint_bonus"
             value="&{template:rolls} {{title=Flint}} {{subtitle=@{character_name} }} {{roll= [[d20+@{flint_mod}[flint_mod] ]]}}">
             Flint Bonus
           </button>
         </div>
         <!-- Strength -->
         <div class="sheet-attribute">
-          <input type="number" id="attr_strength_mod" name="attr_strength_mod" value="0" title="@{strength_mod}"
-            disabled />
+          <span name="attr_strength_mod" title="@{strength_mod}">0</span>
           <input type="number" id="attr_strength_base" name="attr_strength_base" value="0" title="@{strength_base}" />
           <button type="roll" name="roll_strength" value="">
             Strength
@@ -57,7 +54,7 @@
         </div>
         <!-- Wisdom -->
         <div class="sheet-attribute">
-          <input type="number" id="attr_wisdom_mod" name="attr_wisdom_mod" value="0" title="@{wisdom_mod}" disabled />
+          <span name="attr_wisdom_mod" title="@{wisdom_mod}">0</span>
           <input type="number" id="attr_wisdom_base" name="attr_wisdom_base" value="0" title="@{wisdom_base}" />
           <button type="roll" name="roll_wisdom" value="">
             Wisdom
@@ -65,8 +62,7 @@
         </div>
         <!-- Constitution -->
         <div class="sheet-attribute">
-          <input type="number" id="attr_constitution_mod" name="attr_constitution_mod" value="0"
-            title="@{constitution_mod}" disabled />
+          <span name="attr_constitution_mod" title="@{constitution_mod}">0</span>
           <input type="number" id="attr_constitution_base" name="attr_constitution_base" value="0"
             title="@{constitution_base}" />
           <button type="roll" name="roll_constitution" value="">
@@ -75,15 +71,14 @@
         </div>
         <!-- Spark -->
         <div class="sheet-spark">
-          <input type="number" id="attr_spark_mod" name="attr_spark_mod" value="0" title="@{spark_mod}" disabled />
+          <span name="attr_spark_mod" title="@{spark_mod}">0</span>
           <button type="roll" name="roll_spark_bonus" value="">
             Spark Bonus
           </button>
         </div>
         <!-- Intelligence -->
         <div class="sheet-attribute">
-          <input type="number" id="attr_intelligence_mod" name="attr_intelligence_mod" value="0"
-            title="@{intelligence_mod}" disabled />
+          <span name="attr_intelligence_mod" title="@{intelligence_mod}">0</span>
           <input type="number" id="attr_intelligence_base" name="attr_intelligence_base" value="0"
             title="@{intelligence_base}" />
           <button type="roll" name="roll_intelligence" value="">
@@ -92,8 +87,7 @@
         </div>
         <!-- Dexterity -->
         <div class="sheet-attribute">
-          <input type="number" id="attr_dexterity_mod" name="attr_dexterity_mod" value="0" title="@{dexterity_mod}"
-            disabled />
+          <span name="attr_dexterity_mod" title="@{dexterity_mod}">0</span>
           <input type="number" id="attr_dexterity_base" name="attr_dexterity_base" value="0"
             title="@{dexterity_base}" />
           <button type="roll" name="roll_dexterity" value="">
@@ -102,8 +96,7 @@
         </div>
         <!-- Charisma -->
         <div class="sheet-attribute">
-          <input type="number" id="attr_charisma_mod" name="attr_charisma_mod" value="0" title="@{charisma_mod}"
-            disabled />
+          <span name="attr_charisma_mod" title="@{charisma_mod}">0</span>
           <input type="number" id="attr_charisma_base" name="attr_charisma_base" value="0" title="@{charisma_base}" />
           <button type="roll" name="roll_charisma" value="">
             Charisma
@@ -857,6 +850,100 @@
 </main>
 
 <!-- roll template -->
+<div class="sheet-section-fields">
+  <input type="hidden" name="attr_d20" value="1d20">
+  <input type="hidden" name="attr_level" value="1">
+  <input type="hidden" name="attr_pb" value="2">
+  <input type="hidden" name="attr_pbd_safe" value="">
+  <input type="hidden" name="attr_jack" value="1">
+  <input type="hidden" name="attr_jack_attr" value="">
+  <input type="hidden" name="attr_jack_bonus" value="">
+  <input type="hidden" name="attr_passive_wisdom" value="10">
+  <input type="hidden" name="attr_hitdie_final" value="">
+  <input type="hidden" name="attr_globalsavingthrowbonus" value="">
+  <input type="hidden" name="attr_death_save_bonus" value="0">
+  <input type="hidden" name="attr_initiative_bonus" value="0">
+  <input type="hidden" name="attr_spell_save_dc" value="0">
+  <input type="hidden" name="attr_spell_attack_bonus" value="0">
+  <input type="hidden" name="attr_spell_attack_mod" value="0">
+  <input type="hidden" name="attr_npc_legendary_actions_desc" value="">
+  <input type="hidden" name="attr_global_damage_mod_crit" value="0">
+  <input type="hidden" name="attr_global_damage_mod_roll" value="0">
+  <input type="hidden" name="attr_global_damage_mod_type" value="">
+  <input type="hidden" name="attr_global_attack_mod" value="">
+  <input type="hidden" name="attr_global_save_mod" value="">
+  <input type="hidden" name="attr_global_skill_mod" value="">
+  <input type="hidden" name="attr_exhaustion_1" value="">
+  <input type="hidden" name="attr_exhaustion_2" value="">
+  <input type="hidden" name="attr_exhaustion_3" value="">
+  <input type="hidden" name="attr_exhaustion_4" value="">
+  <input type="hidden" name="attr_exhaustion_5" value="">
+  <input type="hidden" name="attr_exhaustion_6" value="">
+  <input type="hidden" name="attr_exhaustion_base" value="0">
+  <input type="hidden" name="attr_exhaustion_wounds" value="0">
+  <input type="hidden" name="attr_exhaustion_conditions" value="0">
+  <input type="hidden" name="attr_exhaustion_total" value="0">
+  <input type="hidden" name="attr_exhaustion_status" value="0">
+  <input type="hidden" name="attr_stress" value="0">
+  <input type="hidden" name="attr_strength_mod" value="0">
+  <input type="hidden" name="attr_wisdom_mod" value="0">
+  <input type="hidden" name="attr_constitution_mod" value="0">
+  <input type="hidden" name="attr_intelligence_mod" value="0">
+  <input type="hidden" name="attr_dexterity_mod" value="0">
+  <input type="hidden" name="attr_charisma_mod" value="0">
+  <input type="hidden" name="attr_flint_mod" value="0">
+  <input type="hidden" name="attr_spark_mod" value="0">
+  <input type="hidden" name="attr_strength_save_bonus" value="0">
+  <input type="hidden" name="attr_dexterity_save_bonus" value="0">
+  <input type="hidden" name="attr_constitution_save_bonus" value="0">
+  <input type="hidden" name="attr_intelligence_save_bonus" value="0">
+  <input type="hidden" name="attr_wisdom_save_bonus" value="0">
+  <input type="hidden" name="attr_charisma_save_bonus" value="0">
+  <input type="hidden" name="attr_strength_maximum" value="20">
+  <input type="hidden" name="attr_dexterity_maximum" value="20">
+  <input type="hidden" name="attr_constitution_maximum" value="20">
+  <input type="hidden" name="attr_intelligence_maximum" value="20">
+  <input type="hidden" name="attr_wisdom_maximum" value="20">
+  <input type="hidden" name="attr_charisma_maximum" value="20">
+  <input type='hidden' name='attr_acrobatics_bonus' value='0'>
+  <input type='hidden' name='attr_animal_handling_bonus' value='0'>
+  <input type='hidden' name='attr_arcana_bonus' value='0'>
+  <input type='hidden' name='attr_athletics_bonus' value='0'>
+  <input type='hidden' name='attr_deception_bonus' value='0'>
+  <input type='hidden' name='attr_history_bonus' value='0'>
+  <input type='hidden' name='attr_insight_bonus' value='0'>
+  <input type='hidden' name='attr_intimidation_bonus' value='0'>
+  <input type='hidden' name='attr_investigation_bonus' value='0'>
+  <input type='hidden' name='attr_medicine_bonus' value='0'>
+  <input type='hidden' name='attr_nature_bonus' value='0'>
+  <input type='hidden' name='attr_perception_bonus' value='0'>
+  <input type='hidden' name='attr_performance_bonus' value='0'>
+  <input type='hidden' name='attr_persuasion_bonus' value='0'>
+  <input type='hidden' name='attr_religion_bonus' value='0'>
+  <input type='hidden' name='attr_sleight_of_hand_bonus' value='0'>
+  <input type='hidden' name='attr_stealth_bonus' value='0'>
+  <input type='hidden' name='attr_survival_bonus' value='0'>
+  <input type='hidden' name='attr_lvl1_slots_total' value='0'>
+  <input type='hidden' name='attr_lvl2_slots_total' value='0'>
+  <input type='hidden' name='attr_lvl3_slots_total' value='0'>
+  <input type='hidden' name='attr_lvl4_slots_total' value='0'>
+  <input type='hidden' name='attr_lvl5_slots_total' value='0'>
+  <input type='hidden' name='attr_lvl6_slots_total' value='0'>
+  <input type='hidden' name='attr_lvl7_slots_total' value='0'>
+  <input type='hidden' name='attr_lvl8_slots_total' value='0'>
+  <input type='hidden' name='attr_lvl9_slots_total' value='0'>
+  <input type='hidden' name='attr_show_death_failures_flag' value='1'>
+  <input type='hidden' name='attr_show_exhaustion_flag' value='1'>
+  <input type='hidden' name='attr_show_stress_flag' value='1'>
+  <input type='hidden' name='attr_show_survival_conditions' value='1'>
+  <input type='hidden' name='attr_use_inventory_slots' value='1'>
+  <input type='hidden' name='attr_use_intelligent_initiative' value='1'>
+  <!-- COMPENDIUM DROP CATCHERS -->
+  <input type="hidden" name="attr_drop_category" accept="Category">
+  <input type="hidden" name="attr_drop_name" accept="Name">
+  <input type="hidden" name="attr_drop_data" accept="data">
+  <input type="hidden" name="attr_drop_content" accept="Content">
+</div>
 
 <rolltemplate class="sheet-rolltemplate-rolls">
   <div class="sheet-container">
@@ -874,3 +961,105 @@
     </div>
   </div>
 </rolltemplate>
+
+<!-- <script> -->
+  <script type="text/worker">
+
+  // On change Attribute Base -> change attribute value for next actions
+  ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'].forEach(attr => {
+    on(`change:${attr}_base`, function () {
+      update_attr(`${attr}`);
+    });
+  });
+
+  // On change Attribute Value update Modifiers
+  ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'].forEach(attr => {
+    on(`change:${attr}`, function () {
+      update_mod(`${attr}`)
+    });
+  });
+
+  // On change attribute modifier update linked properties
+  ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'].forEach(attr => {
+				on(`change:${attr}_mod`, function() {
+					update_save(`${attr}`);
+
+					switch (`${attr}`) {
+						case "strength":
+              update_flint();
+							break;
+            case "wisdom":
+              update_flint();
+              break;
+            case "constitution":
+              update_flint();
+							break;
+            case "intelligence":
+              update_spark();
+              break;
+            case "dexterity":
+              update_spark();
+							break;
+						case "charisma":
+              update_spark();
+							break;
+						default:
+							false;
+					};
+				});
+			});
+
+  var update_attr = function (attr) {
+    getAttrs([attr, attr + "_base"], function (v) {
+      update = {};
+      update[attr] = v[attr + "_base"];
+      setAttrs(update)
+    });
+  }
+
+  var update_mod = function (attr) {
+    getAttrs([attr], function (v) {
+      console.log("Start update " + attr + "_mod");
+      console.log(v[attr]);
+      var finalattr = v[attr] && isNaN(v[attr]) === false ? Math.floor((parseInt(v[attr], 10) - 10) / 2) : 0;
+      console.log("finallattr = " + finalattr);
+      var update = {};
+      update[attr + "_mod"] = finalattr;
+      setAttrs(update);
+    });
+  };
+
+  var update_spark = function () {
+    console.log("Start update spark");
+    var attrs_to_get = ["dexterity_mod", "intelligence_mod", "charisma_mod"];
+    console.log("attrs - " + attrs_to_get);
+    getAttrs(attrs_to_get, function (v) {
+      var update = {};
+      var final_spark = Math.floor((parseInt(v["dexterity_mod"], 10) + parseInt(v["intelligence_mod"], 10) + parseInt(v["charisma_mod"], 10)) / 3);
+      console.log("Final spark = " + final_spark);
+      update["spark_mod"] = final_spark;
+      setAttrs(update);
+    });
+  };
+
+  var update_flint = function () {
+    console.log("Start update flint");
+    var attrs_to_get = ["strength_mod", "wisdom_mod", "constitution_mod"];
+    getAttrs(attrs_to_get, function (v) {
+      var update = {};
+      var final_flint = Math.floor((parseInt(v["strength_mod"], 10) + parseInt(v["wisdom_mod"], 10) + parseInt(v["constitution_mod"], 10)) / 3);
+      console.log("Final flint = " + final_flint);
+      update["flint_mod"] = final_flint;
+      setAttrs(update);
+    });
+  };
+
+  var update_save = function (attr) {
+    console.log("Start update save - " + attr);
+  };
+
+</script>
+
+<!-- 
+
+; -->
